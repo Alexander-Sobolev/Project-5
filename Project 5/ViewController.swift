@@ -109,7 +109,7 @@ class ViewController: UITableViewController {
         
         let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self, weak ac] action in
             guard let answer = ac?.textFields?[0].text else { return }
-            self?.submit(answer)     
+            self?.submit(answer)      
         }
         ac.addAction(submitAction)
         present(ac, animated: true, completion: nil)
